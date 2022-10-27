@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="fondo">
+        <div class="section">
+            <div id="calcu" class="container fluid">
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="size">CALCULADORA DE BASES NUMÉRICAS</h1><br><br><br><br>
+                        
+                        <div class="field">
+                            <div class="control">
+                                <input id="num" model="number" autofocus class="input" type="text" placeholder="Ingrese el número que desea convertir">
+                            </div>
+                        </div>
+    
+                        <div class="field">
+                            <div class="control"><br>
+                                <label class="radio">
+                                    <input onclick="binary()" model="selectedbase" value="2" type="radio" name="conversion">
+                                    Binario
+                                </label>
+                                <label class="radio">
+                                    <input onclick="octal()" model="selectedbase" value="8" type="radio" name="conversion">
+                                    Octal
+                                </label>
+                                <label class="radio">
+                                    <input onclick="decimal()" model="selectedbase" value="10" type="radio" name="conversion">
+                                    Decimal
+                                </label>
+                                <label class="radio">
+                                    <input onclick="hexadecimal()" model="selectedbase" value="16" type="radio" name="conversion">
+                                    Hexadecimal
+                                </label>
+                            </div>
+                        </div><br>
+    
+                        <div class="field addons">
+                            <div class="control">
+                                <a class="button success">
+                                    BINARIO
+                                </a>
+                            </div>
+                            <div class="control expanded">
+                                <input model="binary" readonly class="binary" type="text" placeholder="Muestra en binario">
+                            </div>
+                        </div>
+    
+                        <div class="field addons">
+                            <div class="control">
+                                <a class="button success">
+                                    OCTAL
+                                </a>
+                            </div>
+                            <div class="control expanded">
+                                <input model="octal" readonly class="octal" type="text" placeholder="Muestra en octal">
+                            </div>
+                        </div>
+    
+                        <div class="field addons">
+                            <div class="control">
+                                <a class="button success">
+                                    DECIMAL
+                                </a>
+                            </div>
+                            <div class="control expanded">
+                                <input model="decimal" readonly class="decimal" type="text" placeholder="Muestra en decimal">
+                            </div>
+                        </div>
+    
+                        <div class="field addons">
+                            <div class="control">
+                                <a class="button success">
+                                    HEXADECIMAL
+                                </a>
+                            </div>
+                            <div class="control expanded">
+                                <input model="Hexadecimal" readonly class="hexadecimal" type="text" placeholder="Muestra en hexadecimal">
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="./script.js"></script>
+</html>
